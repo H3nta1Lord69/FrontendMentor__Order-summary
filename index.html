@@ -5,33 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles/styles.css"> <!-- Style sheet -->
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Order Summary
+  <section class="container">
+    <section class="container__sub">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <section class="card">
+        <img src="" alt="" class="card__img">
 
-  Annual Plan
-  $59.99/year
+        <div class="container__sub--info">
+          <div class="">
+            <h2 class="card__title">
+              Order Summary
+            </h2>
+            <h3 class="card__info">
+              You can now listen to millions of songs, audiobooks, and podcasts on any 
+              device anywhere you like!
+            </h3>
+          </div>
+          
+          <div class="">
+            <img src="" alt="">
+            <h3>Annual Plan</h3>
+            <h3>$59.99/year</h3>
+            <a href="/">Change</a>
+          </div>
+        </div>
 
-  Change
+        <div class="">
+          <button class="button">Proceed to payment</button>
+          <label for="">
+            <a href="/">Cancel Order</a>
+          </label>
+        </div>
+          
+      </section>
 
-  Proceed to Payment
-  Cancel Order
+    </section>
+  </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded with ♥ by <a href="#">HentaiLord69</a>.
   </div>
+
 </body>
 </html>

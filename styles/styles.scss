@@ -1,0 +1,16 @@
+$paleBluePrimary: hsl(225, 100%, 94%);
+$brightBluePrimary: hsl(245, 75%, 52%);
+
+$paleBlueNeutral: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.attribution { font-size: 11px; text-align: center;
+    a { color: hsl(228, 45%, 44%); }
+}
