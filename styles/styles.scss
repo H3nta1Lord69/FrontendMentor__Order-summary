@@ -4,13 +4,71 @@ $brightBluePrimary: hsl(245, 75%, 52%);
 $paleBlueNeutral: hsl(225, 100%, 98%);
 $desaturatedBlue: hsl(224, 23%, 55%);
 $darkBlue: hsl(223, 47%, 23%);
+$fontFamily: 'Mulish', sans-serif;
+$fontColor: black;
 
-*
+body
 {
     margin: 0px;
     padding: 0px;
+    font-family: $fontFamily;
+    background-image: -webkit;
+    font-size: 16px;
 }
 
-.attribution { font-size: 11px; text-align: center;
-    a { color: hsl(228, 45%, 44%); }
+.header
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    outline: 1px solid salmon;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 100px;
+    min-height: calc(100vh - 161px);
+    outline: 1px solid blue;
+}
+
+.card
+{
+    background: rgba(255, 255, 255, 0.1);
+    outline: 1px solid salmon;
+    border: 2px solid $fontColor;
+    border-radius: 60px;
+    color: $fontColor;
+    padding: 60px 68px 40px;
+    min-height: 600px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.attribution 
+{ 
+    font-size: 14px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    outline: 1px solid salmon;
+    letter-spacing: 1px;
+    a 
+    { 
+        color: $brightBluePrimary; 
+        cursor: pointer;
+        text-decoration: none;        
+    }
+    a:hover
+    {
+        text-decoration: underline;
+    }
 }
