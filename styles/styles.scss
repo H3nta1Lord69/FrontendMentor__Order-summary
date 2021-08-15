@@ -2,10 +2,18 @@ $paleBluePrimary: hsl(225, 100%, 94%);
 $brightBluePrimary: hsl(245, 75%, 52%);
 
 $paleBlueNeutral: hsl(225, 100%, 98%);
-$desaturatedBlue: hsl(224, 23%, 55%);
+$desaturatedBlue: hsl(225, 100%, 83%);
+$paleBlue: hsl(226, 90%, 92%);
 $darkBlue: hsl(223, 47%, 23%);
 $fontFamily: 'Mulish', sans-serif;
 $fontColor: black;
+
+@mixin mainDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 body
 {
@@ -22,17 +30,25 @@ body
     height: 80px;
     display: flex;
     outline: 1px solid salmon;
+    background-color: $paleBlue;
 }
 
 .container
 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 0px 100px;
     min-height: calc(100vh - 161px);
     outline: 1px solid blue;
+    background-color: $desaturatedBlue;
+}
+
+.container__img
+{
+    position: relative;
+    transform: scaleX(-1);
 }
 
 .card
@@ -42,16 +58,53 @@ body
     border: 2px solid $fontColor;
     border-radius: 60px;
     color: $fontColor;
-    padding: 60px 68px 40px;
+    padding: 0px 0px 40px;
     min-height: 600px;
-    width: 300px;
+    width: 400px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+}
+
+.card__img
+{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.container__info
+{
+    @include mainDisplay;
+    
+}
+
+.card__title
+{
+    @include mainDisplay;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card__info
+{
+    @include mainDisplay;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: $paleBluePrimary;
+}
+
+.card__button
+{
+    @include mainDisplay;
 }
 
 .attribution 
 { 
+    background-color: $desaturatedBlue;
     font-size: 14px; 
     text-align: center;
     display: flex;
