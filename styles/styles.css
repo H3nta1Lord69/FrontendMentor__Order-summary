@@ -10,31 +10,31 @@ body {
   width: 100%;
   height: 80px;
   display: flex;
-  outline: 1px solid salmon;
-  background-color: #d8e1fd;
 }
 
 .container {
+  border-radius: 45px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 0px 100px;
+  padding: 0px 250px;
   min-height: calc(100vh - 161px);
-  outline: 1px solid blue;
   background-color: #a8beff;
+  position: relative;
+  width: calc(100vh - 50px);
+  overflow: hidden;
+  left: 25vh;
 }
 
 .container__img {
-  position: relative;
+  position: absolute;
   transform: scaleX(-1);
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.1);
-  outline: 1px solid salmon;
-  border: 2px solid black;
-  border-radius: 60px;
+  background: white;
+  border-radius: 45px;
   color: black;
   padding: 0px 0px 40px;
   min-height: 600px;
@@ -44,6 +44,7 @@ body {
   flex-direction: column;
   position: absolute;
   overflow: hidden;
+  top: 10vh;
 }
 
 .card__img {
@@ -87,7 +88,6 @@ body {
 }
 
 .attribution {
-  background-color: #a8beff;
   font-size: 14px;
   text-align: center;
   display: flex;
@@ -95,7 +95,6 @@ body {
   align-items: center;
   height: 80px;
   width: 100%;
-  outline: 1px solid salmon;
   letter-spacing: 1px;
 }
 .attribution a {
