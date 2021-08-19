@@ -68,6 +68,7 @@ body
     position: absolute;
     overflow: hidden;
     top: 10vh;
+    box-shadow: 1px;
 }
 
 .card__img
@@ -89,6 +90,7 @@ body
     @include mainDisplay;
     font-size: 25px;
     font-weight: bold;
+    margin-top: 0px;
 }
 
 .card__info
@@ -97,12 +99,86 @@ body
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
-    color: $paleBluePrimary;
+    color: $darkBlue;
+}
+
+.card__method
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 80%;
+    img
+    {
+        margin-left: 10px;
+    }
+    p
+    {
+        margin-right: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        display: block;
+        top: 40px;
+        left: 40px;
+    }
+    span
+    {
+        font-size: 0;
+        display: block;
+    }
+    a
+    {
+        color: $brightBluePrimary;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    a:hover
+    {
+        text-decoration: underline;
+    }
 }
 
 .card__button
 {
     @include mainDisplay;
+    button
+    {
+        background-color: $brightBluePrimary;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        height: 50px;
+        letter-spacing: 1px;
+        margin: 30px 0px;
+        padding: 0px 20px;
+        width: 75%;
+    }
+    button:hover
+    {
+        background-color: $desaturatedBlue;
+        transition: 450ms;
+    }
+    a
+    {
+        color: $brightBluePrimary;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    a:hover
+    {
+        text-decoration: underline;
+    }
 }
 
 .attribution 
